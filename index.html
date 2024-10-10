@@ -5,10 +5,19 @@
   </head>
   <body>
     <button onclick="myfunction()">Execute JS function</button>
+    <h1>Parameter Value/ Variable Passing</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
     <script>
       function myfunction() {
         document.write("My name is Sabah");
       }
+      function parameterFunction(x, y) {
+        var sum = x + y;
+        return sum;
+      }
+      document.getElementById("demo").innerHTML = parameterFunction(15, 25);
+      document.getElementById("demo2").innerHTML = parameterFunction(175, 525);
     </script>
   </body>
 </html>
